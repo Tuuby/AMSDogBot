@@ -1,0 +1,19 @@
+﻿Der Buildvorgang wurde am 24.01.2020 10:55:10 gestartet.
+     1>Projekt "U:\TS\PioneerBV\PioneerBV\PioneerBV.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0407" /nologo /fo"Release\PioneerBV.res" PioneerBV.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\PioneerBV.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\OpenCV3.4.2\lib\Release\ /LIBPATH:C:\OpenCV3.4.2\3rdparty\lib\Release /LIBPATH:C:\OpenCV3.4.2\3rdparty\ippicv\ippicv_win\lib\ia32\ ippiw.lib ippicvmt.lib opencv_stitching342.lib opencv_superres342.lib opencv_videostab342.lib opencv_aruco342.lib opencv_bgsegm342.lib opencv_bioinspired342.lib opencv_ccalib342.lib opencv_dnn_objdetect342.lib opencv_dpm342.lib opencv_face342.lib opencv_fuzzy342.lib opencv_hdf342.lib opencv_hfs342.lib opencv_img_hash342.lib opencv_line_descriptor342.lib opencv_optflow342.lib opencv_reg342.lib opencv_rgbd342.lib opencv_saliency342.lib opencv_stereo342.lib opencv_structured_light342.lib opencv_surface_matching342.lib opencv_tracking342.lib opencv_xfeatures2d342.lib opencv_ximgproc342.lib opencv_xobjdetect342.lib opencv_xphoto342.lib opencv_shape342.lib opencv_photo342.lib opencv_calib3d342.lib opencv_phase_unwrapping342.lib opencv_video342.lib opencv_datasets342.lib opencv_plot342.lib opencv_text342.lib opencv_ml342.lib opencv_features2d342.lib opencv_flann342.lib opencv_highgui342.lib opencv_videoio342.lib opencv_dnn342.lib opencv_imgcodecs342.lib opencv_objdetect342.lib opencv_imgproc342.lib opencv_core342.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib vfw32.lib winmm.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /PDB:".\Release/PioneerBV.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE:NO /IMPLIB:"Release\PioneerBV.lib" /MACHINE:X86 /SAFESEH Release\PioneerBV.res
+         .\Release/Camera.obj
+         .\Release/Image.obj
+         .\Release/PioneerBV.obj
+         .\Release/PioneerBVDlg.obj
+         .\Release/Shared_Memory.obj
+         .\Release/StdAfx.obj
+         .\Release/Thread.obj
+         PioneerBV.vcxproj -> U:\TS\PioneerBV\PioneerBV\Release\PioneerBV.exe
+     1>Die Erstellung des Projekts "U:\TS\PioneerBV\PioneerBV\PioneerBV.vcxproj" ist abgeschlossen, Build Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:00.87

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9771506C-45FA-4D3A-A812-F147D9928809}</ProjectGuid>
+    <RootNamespace>PioneerBV</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/PioneerBV.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>SharedMemory;C:\OpenCV3.4.2\src\modules\imgproc\include;C:\OpenCV3.4.2\src\modules\core\include;C:\OpenCV3.4.2\src\modules\imgcodecs\include;C:\OpenCV3.4.2\src\modules\objdetect\include;C:\OpenCV3.4.2\src\modules\calib3d\include;C:\OpenCV3.4.2\src\modules\features2d\include;C:\OpenCV3.4.2\src\modules\highgui\include;C:\OpenCV3.4.2\src\modules\videoio\include;C:\OpenCV3.4.2\src\modules\flann\include;C:\OpenCV3.4.2\src\modules\shape\include;C:\OpenCV3.4.2\src\modules\video\include;C:\OpenCV3.4.2\src\modules\ml\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\datasets\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\text\include;C:\OpenCV3.4.2\src\modules\dnn\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\plot\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\phase_unwrapping\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\ximgproc\include;C:\OpenCV3.4.2\src\modules\photo\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\xfeatures2d\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\xphoto\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\xobjdetect\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\tracking\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\surface_matching\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\structured_light\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\stereo\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\saliency\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\rgbd\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\reg\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\optflow\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\line_descriptor\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\img_hash\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\hfs\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\hdf\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\fuzzy\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\face\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\dpm\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\dnn_objdetect\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\ccalib\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\bioinspired\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\bgsegm\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\aruco\include;C:\OpenCV3.4.2\src\modules\videostab\include;C:\OpenCV3.4.2\src\modules\superres\include;C:\OpenCV3.4.2\src\modules\stitching\include;C:\OpenCV3.4.2\3rdparty\ippicv\ippicv_win\include;C:\OpenCV3.4.2\3rdparty\ippicv\ippiw_win\include;C:\OpenCV3.4.2;C:\OpenCV3.4.2\src\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;BVS_EXE;WINVER=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/PioneerBV.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ippiw.lib;ippicvmt.lib;opencv_stitching342.lib;opencv_superres342.lib;opencv_videostab342.lib;opencv_aruco342.lib;opencv_bgsegm342.lib;opencv_bioinspired342.lib;opencv_ccalib342.lib;opencv_dnn_objdetect342.lib;opencv_dpm342.lib;opencv_face342.lib;opencv_fuzzy342.lib;opencv_hdf342.lib;opencv_hfs342.lib;opencv_img_hash342.lib;opencv_line_descriptor342.lib;opencv_optflow342.lib;opencv_reg342.lib;opencv_rgbd342.lib;opencv_saliency342.lib;opencv_stereo342.lib;opencv_structured_light342.lib;opencv_surface_matching342.lib;opencv_tracking342.lib;opencv_xfeatures2d342.lib;opencv_ximgproc342.lib;opencv_xobjdetect342.lib;opencv_xphoto342.lib;opencv_shape342.lib;opencv_photo342.lib;opencv_calib3d342.lib;opencv_phase_unwrapping342.lib;opencv_video342.lib;opencv_datasets342.lib;opencv_plot342.lib;opencv_text342.lib;opencv_ml342.lib;opencv_features2d342.lib;opencv_flann342.lib;opencv_highgui342.lib;opencv_videoio342.lib;opencv_dnn342.lib;opencv_imgcodecs342.lib;opencv_objdetect342.lib;opencv_imgproc342.lib;opencv_core342.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;vfw32.lib;winmm.lib</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>C:\OpenCV3.4.2\lib\Release\;C:\OpenCV3.4.2\3rdparty\lib\Release;C:\OpenCV3.4.2\3rdparty\ippicv\ippicv_win\lib\ia32\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>.\Release/PioneerBV.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/PioneerBV.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/PioneerBV.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>SharedMemory;C:\OpenCV3.4.2\src\modules\imgproc\include;C:\OpenCV3.4.2\src\modules\core\include;C:\OpenCV3.4.2\src\modules\imgcodecs\include;C:\OpenCV3.4.2\src\modules\objdetect\include;C:\OpenCV3.4.2\src\modules\calib3d\include;C:\OpenCV3.4.2\src\modules\features2d\include;C:\OpenCV3.4.2\src\modules\highgui\include;C:\OpenCV3.4.2\src\modules\videoio\include;C:\OpenCV3.4.2\src\modules\flann\include;C:\OpenCV3.4.2\src\modules\shape\include;C:\OpenCV3.4.2\src\modules\video\include;C:\OpenCV3.4.2\src\modules\ml\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\datasets\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\text\include;C:\OpenCV3.4.2\src\modules\dnn\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\plot\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\phase_unwrapping\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\ximgproc\include;C:\OpenCV3.4.2\src\modules\photo\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\xfeatures2d\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\xphoto\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\xobjdetect\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\tracking\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\surface_matching\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\structured_light\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\stereo\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\saliency\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\rgbd\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\reg\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\optflow\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\line_descriptor\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\img_hash\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\hfs\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\hdf\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\fuzzy\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\face\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\dpm\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\dnn_objdetect\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\ccalib\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\bioinspired\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\bgsegm\include;C:\OpenCV3.4.2\src\opencv_contrib-3.4.2\modules\aruco\include;C:\OpenCV3.4.2\src\modules\videostab\include;C:\OpenCV3.4.2\src\modules\superres\include;C:\OpenCV3.4.2\src\modules\stitching\include;C:\OpenCV3.4.2\3rdparty\ippicv\ippicv_win\include;C:\OpenCV3.4.2\3rdparty\ippicv\ippiw_win\include;C:\OpenCV3.4.2;C:\OpenCV3.4.2\src\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;BVS_EXE;WIN32;_WINDOWS;WINVER=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug/PioneerBV.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ippiwd.lib;ippicvmt.lib;opencv_stitching342d.lib;opencv_superres342d.lib;opencv_videostab342d.lib;opencv_aruco342d.lib;opencv_bgsegm342d.lib;opencv_bioinspired342d.lib;opencv_ccalib342d.lib;opencv_dnn_objdetect342d.lib;opencv_dpm342d.lib;opencv_face342d.lib;opencv_fuzzy342d.lib;opencv_hdf342d.lib;opencv_hfs342d.lib;opencv_img_hash342d.lib;opencv_line_descriptor342d.lib;opencv_optflow342d.lib;opencv_reg342d.lib;opencv_rgbd342d.lib;opencv_saliency342d.lib;opencv_stereo342d.lib;opencv_structured_light342d.lib;opencv_surface_matching342d.lib;opencv_tracking342d.lib;opencv_xfeatures2d342d.lib;opencv_ximgproc342d.lib;opencv_xobjdetect342d.lib;opencv_xphoto342d.lib;opencv_shape342d.lib;opencv_photo342d.lib;opencv_calib3d342d.lib;opencv_phase_unwrapping342d.lib;opencv_video342d.lib;opencv_datasets342d.lib;opencv_plot342d.lib;opencv_text342d.lib;opencv_ml342d.lib;opencv_features2d342d.lib;opencv_flann342d.lib;opencv_highgui342d.lib;opencv_videoio342d.lib;opencv_dnn342d.lib;opencv_imgcodecs342d.lib;opencv_objdetect342d.lib;opencv_imgproc342d.lib;opencv_core342d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;vfw32.lib;winmm.lib</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>C:\OpenCV3.4.2\lib\Debug\;C:\OpenCV3.4.2\3rdparty\lib\Debug;C:\OpenCV3.4.2\3rdparty\ippicv\ippicv_win\lib\ia32\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/PioneerBVD.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/PioneerBV.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="PioneerBV.cpp" />
+    <ClCompile Include="PioneerBVDlg.cpp" />
+    <ClCompile Include="SharedMemory\Shared_Memory.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PioneerBV.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\OpenCV\OtherLibs\_Ipl\include\ipl.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="PioneerBV.h" />
+    <ClInclude Include="PioneerBVDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SharedMemory\Shared_Memory.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Thread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\PioneerBV.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PioneerBV.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

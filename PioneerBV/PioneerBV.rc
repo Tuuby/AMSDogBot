@@ -1,0 +1,249 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PioneerBV.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standardkomponenten\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PioneerBV.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Info über PioneerBV"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PioneerBV Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PIONEERBV_DIALOG DIALOGEX 0, 0, 457, 315
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PioneerBV"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Beenden",IDCANCEL,400,286,50,14
+    PUSHBUTTON      "&Start Thread",IDC_START_THREAD,400,24,50,14
+    PUSHBUTTON      "S&top Thread",IDC_STOP_THREAD,400,39,50,14
+    PUSHBUTTON      "Video &Format",IDC_VIDEO_FORMAT,400,56,50,14
+    PUSHBUTTON      "Video &Quelle",IDC_VIDEO_SOURCE,400,71,50,14
+    PUSHBUTTON      "frei",IDC_BUTTON_OWN_0,400,191,50,14
+    PUSHBUTTON      "frei",IDC_BUTTON_OWN_1,400,207,50,14
+    PUSHBUTTON      "frei",IDC_BUTTON_OWN_2,400,223,50,14
+    PUSHBUTTON      "frei",IDC_BUTTON_OWN_3,400,239,50,14
+    PUSHBUTTON      "frei",IDC_BUTTON_OWN_4,400,255,50,14
+    LTEXT           "Frames:",IDC_STATIC,231,255,26,8
+    RTEXT           "",IDC_STATIC_FRAMECOUNT,266,255,30,8
+    RTEXT           "frei",IDC_VALUE_0,7,259,44,9,SS_SUNKEN
+    LTEXT           "Wert0:",IDC_DESCRIPTION_0,7,250,44,8
+    RTEXT           "frei",IDC_VALUE_1,75,260,44,9,SS_SUNKEN
+    LTEXT           "Wert1:",IDC_DESCRIPTION_1,76,252,44,8
+    RTEXT           "frei",IDC_VALUE_2,143,260,44,9,SS_SUNKEN
+    LTEXT           "Wert2:",IDC_DESCRIPTION_2,143,252,40,8
+    RTEXT           "frei",IDC_VALUE_3,7,299,44,9,SS_SUNKEN
+    LTEXT           "Wert3:",IDC_DESCRIPTION_3,7,286,40,8
+    RTEXT           "frei",IDC_VALUE_4,74,299,44,9,SS_SUNKEN
+    LTEXT           "Wert4:",IDC_DESCRIPTION_4,74,286,40,8
+    RTEXT           "frei",IDC_VALUE_5,144,299,44,9,SS_SUNKEN
+    LTEXT           "Wert5:",IDC_DESCRIPTION_5,145,286,40,8
+    LISTBOX         IDC_LIST_HISTORY,7,190,383,53,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ChooseThread,231,296,105,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_VALUE_0_inc,55,255,7,14
+    PUSHBUTTON      "-",IDC_VALUE_0_dec,63,255,7,14
+    PUSHBUTTON      "+",IDC_VALUE_1_inc,123,255,7,14
+    PUSHBUTTON      "-",IDC_VALUE_1_dec,130,255,7,14
+    PUSHBUTTON      "+",IDC_VALUE_2_inc,191,255,7,14
+    PUSHBUTTON      "-",IDC_VALUE_2_dec,198,255,7,14
+    PUSHBUTTON      "+",IDC_VALUE_3_inc,55,294,7,14
+    PUSHBUTTON      "-",IDC_VALUE_3_dec,62,294,7,14
+    PUSHBUTTON      "+",IDC_VALUE_4_inc,122,294,7,14
+    PUSHBUTTON      "-",IDC_VALUE_4_dec,129,294,7,14
+    PUSHBUTTON      "+",IDC_VALUE_5_inc,192,294,7,14
+    PUSHBUTTON      "-",IDC_VALUE_5_dec,199,294,7,14
+    LTEXT           "Wähle BV-Modul:",IDC_STATIC,231,281,94,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MFC-Anwendung PioneerBV\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PioneerBV\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PioneerBV.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Anwendung PioneerBV\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_PIONEERBV_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 450
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+        HORZGUIDE, 269
+        HORZGUIDE, 286
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Inf&o über PioneerBV..."
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\PioneerBV.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "l.deu\afxres.rc"          // Standardkomponenten
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
